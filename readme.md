@@ -100,11 +100,7 @@ Nosso projeto será gerenciada com base na Clean Architecture, contendo interfac
 ### Pré-requisitos
 
 - .NET SDK
-- MongoDB: link de acesso ao banco: 
-
-```bash
-    mongodb+srv://csspclaudio:clnzEcsY8xmMVXMr@cluster0.kfgkjua.mongodb.net/
-``` 
+- MongoDB: link de acesso ao banco enviado pelo sistema da FIAP.
 
 Demais configurações se for necessária:
 
@@ -112,7 +108,7 @@ Demais configurações se for necessária:
 
 ```bash
     "ConfigMongoDb": {
-    "ConnectionString": "mongodb+srv://csspclaudio:clnzEcsY8xmMVXMr@cluster0.kfgkjua.mongodb.net/",
+    "ConnectionString": "",
     "DatabaseName": "Project",
     "UsuarioCollectionName": "t_usuario",
     "LoginCollectionName": "t_login",
@@ -137,7 +133,7 @@ Demais configurações se for necessária:
 
 1. Clone o repositório:
 ```bash
-    https://github.com/patinaomi/delfos-machine-2-sem.git
+    https://github.com/Claudio-Silva-Bispo/aplicacao-dotnet-mongo-sprint-3-delfosmachine.git
 ``` 
    
 ## Execução
