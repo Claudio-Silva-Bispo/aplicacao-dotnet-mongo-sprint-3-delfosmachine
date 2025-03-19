@@ -1,0 +1,43 @@
+@model IEnumerable<Project.Models.Campanha>
+
+<section class="p-5">
+
+    <h2>Campanha de incentivo</h2>
+    <p>Neste momento, teremos somente esta tela para consultar as atividades da campanha.</p>
+    <table class="table" style="text-align: center;">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Atividade</th>
+                <th>Descricao</th>
+                <th>Pontuacao</th>
+                <th>Perfil</th>
+                <th>IdUsuario</th>
+                <th>Status</th>
+                <th>Criacao</th>
+                <th>Conclusao</th>
+            </tr>
+        </thead>
+        <tbody style="font-size: small;">
+            @foreach (var campanha in Model)
+            {
+                <tr>
+                    <td>@campanha.Id</td>
+                    <td>@campanha.Atividade</td>
+                    <td>@campanha.Descricao</td>
+                    <td>@campanha.Pontuacao</td>
+                    <td>@campanha.Perfil</td>
+                    <td>@campanha.IdUsuario</td>
+                    <td>@campanha.Status</td>
+                    <td>@campanha.DataCriacao</td>
+                    <td>@campanha.DataConclusao</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="form-group pt-3">
+        <a asp-controller="Home" class="btn" style="background-color: #9B4819; color: #fdf5e6;">Voltar</a>
+    </div>
+
+</section>

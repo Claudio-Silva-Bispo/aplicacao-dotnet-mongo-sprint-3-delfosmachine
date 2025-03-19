@@ -1,0 +1,40 @@
+@model IEnumerable<Project.Models.Clinica>
+
+<section class="p-5">
+
+    <h2>Lista de Clinicas cadastradas</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>CNPJ</th>
+                <th>Telefone</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Perfil</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var usuario in Model)
+            {
+                <tr>
+                    <td>@usuario.Id</td>
+                    <td>@usuario.Nome</td>
+                    <td>@usuario.CNPJ</td>
+                    <td>@usuario.Telefone</td>
+                    <td>@usuario.Email</td>
+                    <td>@usuario.Senha</td>
+                    <td>@usuario.Perfil</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="form-group pt-3">
+        <a asp-controller="Clinica" class="btn" style="background-color: #9B4819; color: #fdf5e6;">Voltar</a>
+        <a asp-controller="Clinica" asp-action="Atualizar" class="btn" style="background-color: #bc885d; color: #fdf5e6;">Atualizar dados</a>
+        <a asp-controller="Home" asp-action="Index" class="btn" style="background-color: #F4E1C1; color: #9B4819;">Home</a>
+    </div>
+
+</section>
